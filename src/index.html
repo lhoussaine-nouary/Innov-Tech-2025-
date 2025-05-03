@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Actualités — INNOV'TECH 2025</title>
+  <title>INNOV'TECH 2025 — Accueil</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="bg-navy text-white">
   <div class="background-art">
@@ -55,28 +56,161 @@
     </div>
   </div>
   <header>
-    <nav class="navbar-transparent">
-      <div class="navbar-logo">
+    <div class="mobile-navbar">
+      <div class="mobile-navbar-logo">
         <img src="images/logo/logo1.png" alt="Logo INNOV'TECH 2025">
       </div>
+      <div class="mobile-navbar-title">Accueil</div>
+      <button class="navbar-toggle" aria-label="Ouvrir le menu de navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Sidebar mobile et overlay -->
+    <div class="mobile-sidebar-overlay"></div>
+    <aside class="mobile-sidebar">
+      <button class="sidebar-close" aria-label="Fermer le menu">&times;</button>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="program.html">Programme</a></li>
+          <li><a href="speakers.html">Intervenants</a></li>
+          <li><a href="communities.html">Communautés</a></li>
+          <li><a href="registration.html">Inscription</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="news.html">Actualités</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <nav class="navbar-transparent">
       <ul>
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html" class="active">Accueil</a></li>
         <li><a href="program.html">Programme</a></li>
         <li><a href="speakers.html">Intervenants</a></li>
-        <li><a href="registration.html">Inscription</a></li>
         <li><a href="communities.html">Communautés</a></li>
+        <li><a href="registration.html">Inscription</a></li>
         <li><a href="sponsors.html">Sponsors</a></li>
-        <li><a href="news.html" class="active">Actualités</a></li>
+        <li><a href="news.html">Actualités</a></li>
       </ul>
     </nav>
-    <h1>Actualités & Mises à jour</h1>
+    <h1 class="desktop-title">Industrie Intelligente : Mécanique, Mécatronique et Systèmes Énergétiques</h1>
   </header>
   <main>
-    <section>
-      <h2>Dernières nouvelles</h2>
-      <p>Articles et mises à jour à venir.</p>
-    </section>
-  </main>
+      <section class="call-to-innovation white-border-section">
+        <div class="call-content">
+          <blockquote>
+            <h2>Un Appel National à l’Innovation</h2>
+            <p>« L’industrie est un levier essentiel du développement durable et intégré, et un pilier stratégique de la transformation de notre économie. »<br>
+            <span class="royal-signature">— Sa Majesté le Roi Mohammed VI<br>(Discours Royal sur le développement industriel)</span>
+            <small class="royal-citation">
+              Source : <a href="https://diplomatie.ma/en/hm-king-addresses-message-participants-1st-edition-national-industry-day" target="_blank" rel="noopener">Ministry of Foreign Affairs, African Cooperation and Moroccan Expatriates. (2023, March 29)</a>
+            </small>
+            </p>
+          </blockquote>
+        </div>
+        <div class="call-image">
+          <img src="images/king.png" alt="Discours Royal" style="max-width:220px; border-radius:18px; box-shadow:0 4px 24px #00c6ff55;">
+        </div>
+      </section>
+      <section class="intro-innovtech white-border-section">
+        <h2>INNOV'TECH 2025</h2>
+        <p>Inspiré par cette vision nationale, INNOV'TECH 2025 incarne l’ambition d’une industrie marocaine plus intelligente, plus verte et plus résiliente. Rejoignez un mouvement qui relie l’excellence académique à l’innovation industrielle.</p>
+        <p><strong>Industrie Intelligente : Mécanique, Mécatronique et Systèmes Énergétiques</strong></p>
+        <p>Organisé à l’ENSA Fès, cet événement industriel et scientifique réunit professionnels, chercheurs, ingénieurs et innovateurs pour façonner l’avenir de l’industrie intelligente au Maroc et au-delà.</p>
+      </section>
+      <section class="why-attend white-border-section">
+        <h2>Pourquoi participer ?</h2>
+        <ul>
+          <li>Plongez dans les systèmes mécaniques avancés, la mécatronique et les technologies de transition énergétique</li>
+          <li>Échangez avec des pionniers industriels et des universitaires de renom</li>
+          <li>Découvrez des applications concrètes de l’IA, de l’automatisation et des systèmes énergétiques durables</li>
+        </ul>
+      </section>
+      <section class="event-highlights white-border-section">
+        <h2>Temps forts</h2>
+        <ul>
+          <li><strong>Conférences plénières</strong> : Interventions d’experts sur l’industrie intelligente, la résilience énergétique et l’automatisation industrielle.</li>
+          <li><strong>Tables rondes</strong> : Dialogues stratégiques sur la voie marocaine vers l’Industrie 4.0 avec des leaders académiques et industriels.</li>
+          <li><strong>Networking</strong> : Rencontrez entreprises, startups, laboratoires et chercheurs partageant votre vision de l’innovation.</li>
+        </ul>
+      </section>
+      <section class="focus-tracks white-border-section">
+        <h2>Focus thématiques</h2>
+        <ul>
+          <li>Robotique intelligente et automatisation</li>
+          <li>Efficacité énergétique et systèmes renouvelables</li>
+          <li>Conception et contrôle mécatroniques</li>
+          <li>IA industrielle & jumeaux numériques</li>
+        </ul>
+      </section>
+      <section class="organizers white-border-section">
+        <h2>Organisé par ceux qui bâtissent le futur</h2>
+        <ul class="organizers-list">
+          <li>
+            <img src="images/logo/usmba.png" alt="USMBA" class="organizer-logo">
+            Université Sidi Mohamed Ben Abdellah (USMBA)
+          </li>
+          <li>
+            <img src="images/logo/ensa-fes.png" alt="ENSA Fès" class="organizer-logo">
+            Communauté académique et de recherche de l’ENSA Fès
+          </li>
+          <li>
+            <img src="images/logo/powerup.png" alt="PowerUP Club" class="organizer-logo">
+            <div>PowerUP Club</div>
+            <small class="organizer-desc">Filière Génie Énergétique et Systèmes Intelligents</small>
+
+          </li>
+          <li>
+            <img src="images/logo/mechatronics-trendz.png" alt="Mechatronics TrendZ Club" class="organizer-logo">
+            <div>Mechatronics TrendZ Club</div>
+            <small class="organizer-desc">Filière Mécatronique</small>
+          </li>
+          <li>
+            Étudiants de la filière Génie Mécanique
+          </li>
+          <li>
+            Étudiants de la filière Génie Industriel
+          </li>
+        </ul>
+        <p>Ensemble, nous unissons passion technique et vision stratégique pour créer une plateforme inspirante pour les leaders industriels de demain.</p>
+      </section>
+      <section class="practical-info white-border-section">
+        <h2>À noter</h2>
+        <ul>
+          <li><strong>Date :</strong> 13 / 05 / 2025</li>
+          <li><strong>Heure :</strong> 08:00 – 17:00</li>
+          <li><strong>Lieu :</strong> Salle de conférence, ENSA Fès</li>
+          <li><strong>Public :</strong> Ingénieurs, académiques, doctorants, entreprises, innovateurs, décideurs</li>
+        </ul>
+      </section>
+      <section class="registration white-border-section">
+        <h2>Inscrivez-vous</h2>
+        <p>La participation est gratuite mais l’inscription est obligatoire.<br>
+        <a href="registration.html" class="register-link">Lien vers le formulaire d’inscription Google</a></p>
+        <p>Vos informations seront enregistrées en toute sécurité pour le suivi de l’événement.</p>
+      </section>
+      <section class="stay-connected white-border-section">
+        <h2>Restez connectés</h2>
+        <div class="social-cards-container">
+          <div class="social-card">
+            <img src="images/logo/powerup.png" alt="PowerUP Club" class="social-logo">
+            <div class="social-title">PowerUP Club</div>
+            <div class="social-links">
+              <a href="https://www.instagram.com/power_uuup?igsh=MWRuZ21zYXUwc3Fv" target="_blank" title="Instagram PowerUP" class="social-icon insta"><span>Instagram</span></a>
+              <a href="https://www.linkedin.com/company/club-powerup/" target="_blank" title="LinkedIn PowerUP" class="social-icon linkedin"><span>LinkedIn</span></a>
+              <a href="https://nouary.github.io/Power-Up/index.html" target="_blank" title="Site web PowerUP" class="social-icon web"><span>Site web</span></a>
+            </div>
+          </div>
+          <div class="social-card">
+            <img src="images/logo/mechatronics-trendz.png" alt="Mechatronics TrendZ Club" class="social-logo">
+            <div class="social-title">Mechatronics TrendZ Club</div>
+            <div class="social-links">
+              <a href="https://www.instagram.com/mechatronicstrendz" target="_blank" title="Instagram Mechatronics TrendZ" class="social-icon insta"><span>Instagram</span></a>
+              <a href="https://www.linkedin.com/company/mechatronics-trendz-b69240203/" target="_blank" title="LinkedIn Mechatronics TrendZ" class="social-icon linkedin"><span>LinkedIn</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   <footer class="site-footer">
     <div class="footer-grid footer-grid-rtl">
       <div class="footer-quote-block">
