@@ -1024,3 +1024,64 @@ main p, main li {
     inset 0 0 32px 0 rgba(255, 255, 255, 0.05);
   transform: translateY(-2px);
 }
+
+/* Style pour la section des intervenants */
+.speaker-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.speaker-info {
+  flex: 2 1 320px;
+  min-width: 220px;
+  max-width: 600px;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+.speaker-info strong {
+  font-size: 1.45rem;
+}
+.speaker-info em {
+  font-size: 1.15rem;
+}
+.speaker-info span {
+  font-size: 1.13rem;
+}
+.speaker-info small {
+  font-size: 1.08rem;
+}
+.speaker-photo-container {
+  flex: 1 1 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.speaker-photo {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 4px 32px #00c6ff77;
+  background: #fff;
+  display: block;
+}
+@media (max-width: 700px) {
+  .speaker-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+  .speaker-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+  }
+  .speaker-info {
+    font-size: 1.08rem;
+  }
+  .speaker-info strong {
+    font-size: 1.18rem;
+  }
+}
