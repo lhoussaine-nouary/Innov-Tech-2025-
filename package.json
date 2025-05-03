@@ -1,0 +1,12 @@
+{
+  "name": "event-website",
+  "version": "1.0.0",
+  "description": "Site futuriste pour un événement",
+  "scripts": {
+    "dev": "live-server src"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
+
