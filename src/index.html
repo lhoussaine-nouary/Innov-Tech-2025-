@@ -12,6 +12,15 @@
     <!-- SVG décoratif pour formes géométriques -->
     <svg class="bg-svg" width="100%" height="100%" viewBox="0 0 1920 1080" preserveAspectRatio="none">
       <defs>
+        <!-- Dégradé animé pour le fond général -->
+        <linearGradient id="mainBgGradient" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#0f2027">
+            <animate attributeName="stop-color" values="#0f2027;#2c5364;#0f2027" dur="18s" repeatCount="indefinite"/>
+          </stop>
+          <stop offset="100%" stop-color="#2c5364">
+            <animate attributeName="stop-color" values="#2c5364;#00c6ff;#2c5364" dur="18s" repeatCount="indefinite"/>
+          </stop>
+        </linearGradient>
         <radialGradient id="radial1" cx="80%" cy="20%" r="1.2">
           <stop offset="0%" stop-color="#00c6ff55"/>
           <stop offset="100%" stop-color="transparent"/>
@@ -21,6 +30,8 @@
           <stop offset="100%" stop-color="transparent"/>
         </radialGradient>
       </defs>
+      <!-- Rectangle de fond animé -->
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#mainBgGradient)"/>
       <circle cx="1600" cy="200" r="320" fill="url(#radial1)"/>
       <circle cx="400" cy="900" r="260" fill="url(#radial2)"/>
       <g opacity="0.13">
@@ -51,14 +62,12 @@
       </div>
       <ul>
         <li><a href="index.html" class="active">Accueil</a></li>
-        <li><a href="about.html">À propos</a></li>
         <li><a href="program.html">Programme</a></li>
         <li><a href="speakers.html">Intervenants</a></li>
         <li><a href="registration.html">Inscription</a></li>
-        <li><a href="communities.html">Équipes & Communautés</a></li>
+        <li><a href="communities.html">Communautés</a></li>
         <li><a href="sponsors.html">Sponsors</a></li>
         <li><a href="news.html">Actualités</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <h1>Industrie Intelligente : Mécanique, Mécatronique et Systèmes Énergétiques</h1>
@@ -202,7 +211,6 @@
           <h3>Navigation</h3>
           <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html">À propos</a></li>
             <li><a href="program.html">Programme</a></li>
             <li><a href="speakers.html">Intervenants</a></li>
             <li><a href="registration.html">Inscription</a></li>
