@@ -5,6 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Communautés — INNOV'TECH 2025</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+      .organization-community-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+
+      .organization-community-list li {
+        background: #2c5364;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .organization-community-list li:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .organization-community-list li strong {
+        display: block;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .organization-community-list li:nth-child(odd) {
+        background: #ff8c00; /* Orange foncé */
+      }
+
+      .organization-community-list li:nth-child(even) {
+        background: #ffa500; /* Orange clair */
+      }
+
+      .scientific-community-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+
+      .scientific-community-list li {
+        background: #2c5364;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .scientific-community-list li:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .scientific-community-list li:nth-child(odd) {
+        background: #1b1e88; /* Orange foncé */
+      }
+
+      .scientific-community-list li:nth-child(even) {
+        background: #635ee4; /* Orange clair */
+      }
+    </style>
 </head>
 <body class="bg-navy text-white">
   <div class="background-art">
@@ -64,7 +134,6 @@
         <li><a href="program.html">Programme</a></li>
         <li><a href="speakers.html">Intervenants</a></li>
         <li><a href="communities.html" class="active">Communautés</a></li>
-        <li><a href="registration.html">Inscription</a></li>
         <li><a href="sponsors.html">Sponsors</a></li>
         <li><a href="news.html">Actualités</a></li>
       </ul>
@@ -90,7 +159,6 @@
         <li><a href="program.html">Programme</a></li>
         <li><a href="speakers.html">Intervenants</a></li>
         <li><a href="communities.html" class="active">Communautés</a></li>
-        <li><a href="registration.html">Inscription</a></li>
         <li><a href="sponsors.html">Sponsors</a></li>
         <li><a href="news.html">Actualités</a></li>
       </ul>
@@ -100,42 +168,71 @@
     <section>
       <h2>Comité scientifique</h2>
       <ul class="scientific-community-list">
-        <li>ACHRAF AKAABOUNE</li>
-        <li>ALAAOUINA LOUBNA</li>
-        <li>ALAOUI MERIEM</li>
-        <li>ALFIDI MOHAMMED</li>
-        <li>ALLA LHOUSSAINE</li>
-        <li>BENNOUNA FATIMA</li>
-        <li>BOULAICH MOHAMMED ALI</li>
-        <li>CHAIBI YASSINE</li>
-        <li>CHALH ZAKARIA</li>
-        <li>EL AFOU YOUSSEF</li>
-        <li>EL AFOU YOUSSE</li>
-        <li>EL HAINI JAMILA</li>
-        <li>EL HAMMAMI YOUNESS</li>
-        <li>EL HASSANI HIND</li>
-        <li>EL KHATTABI SOUAD</li>
-        <li>EL KHATTABI SQUAD</li>
-        <li>FEKAK FATIMAEZZAHRA</li>
-        <li>FARHANE YOUNESS</li>
-        <li>HIHI HICHAM</li>
-        <li>KHAISSIDI GHIZLANE</li>
-        <li>LAHRACH KHADJJA</li>
-      </ul>
-      <ul class="scientific-community-list">
-        <li>MRABTI MOSTAFA</li>
-        <li>OUAHI MOHAMED</li>
-        <li>OUHAIBI SALMA</li>
-        <li>REDA SCHIR</li>
-        <li>SAKA ABDELMIJD</li>
-        <li>SANAE NASRI</li>
-        <li>SAYYOURI MHAMED</li>
+        <li>ACHAHBAR Asmae</li>
+        <li>ALFIDI Mohammed</li>
+        <li>AZRAR Abdellhadi</li>
+        <li>BENNOUNA Fatima</li>
+        <li>CHAIB Yassine</li>
+        <li>CHALH Zakaria</li>
+        <li>EL HAMMAMI Youness</li>
+        <li>EL HAINI Jamila</li>
+        <li>EL KHATABI Souad</li>
+        <li>EL LAFOU Youssef</li>
+        <li>El HASSANI Hind</li>
+        <li>FEKKAK Fatima Zahra</li>
+        <li>HIHI Hicham</li>
+        <li>JERROUDI Amine</li>
+        <li>KARITE Touria</li>
+        <li>KHAISSIDI Ghizlane</li>
+        <li>LAAOUINA Loubna</li>
+        <li>MONTASSIR Soufiane</li>
+        <li>MOTTAHIR Saad</li>
+        <li>MOUSTABCHIR Hassan</li>
+        <li>MRABTI Mostafa</li>
+        <li>NASRI Sanae</li>
+        <li>OUAHI Mohammed</li>
+        <li>OUHAIBI Salma</li>
+        <li>SAKA Abdelmjid</li>
+        <li>SALHI Mohamed</li>
+        <li>SAYYOURI Mhamed</li>
       </ul>
     </section>
 
     <section>
       <h2>Comité d’organisation</h2>
-      <p>Membres à venir.</p>
+      <ul class="organization-community-list">
+        <li><strong>TAMDOULI Ismail</strong>Président du club Mechatronics Trendz</li>
+        <li><strong>MESSAAOUDI Fatima Zahra</strong>Présidente du club Power Up</li>
+        <li><strong>ABDELAOUI Jaouad</strong></li>
+        <li><strong>AIT BENALI Meryem</strong></li>
+        <li><strong>BELAITER Yasmine</strong></li>
+        <li><strong>BENKARROU Aya</strong></li>
+        <li><strong>BENTAHAR Oumayma</strong></li>
+        <li><strong>SAADANI Aymane</strong></li>
+        <li><strong>BOUSTITI Amine</strong></li>
+        <li><strong>FARISS Aymane</strong></li>
+        <li><strong>ESSALHI Nouhayla</strong></li>
+        <li><strong>FUNGA Danny</strong></li>
+        <li><strong>KIBA Chaimae</strong></li>
+        <li><strong>LAMGHARI Firdaousse</strong></li>
+        <li><strong>NABIL Anour</strong></li>
+        <li><strong>JALAL Abla</strong></li>
+        <li><strong>MELLOUKI MOHAMED</strong></li>
+        <li><strong>El Fertiti Rajae</strong></li>
+        <li><strong>NOUARY Lhoussaine</strong></li>
+        <li><strong>AMRANI ZERIFI Meryem</strong></li>
+        <li><strong>MSSIYAH Douae</strong></li>
+        <li><strong>EL-KHADIRY Yassmina</strong></li>
+        <li><strong>EL BADRI Samia</strong></li>
+        <li><strong>ERRADI Mohamed</strong></li>
+        <li><strong>EL KASMY Abdelilah</strong></li>
+        <li><strong>UMAR Ahmad Farouk</strong></li>
+        <li><strong>DCHIOUCH Imane</strong></li>
+        <li><strong>OUANZI Taoufik</strong></li>
+        <li><strong>NAHNAHI Khadija</strong></li>
+        <li><strong>ASRI Abdeljabbar</strong></li>
+        <li><strong>EL ADDAOUI Yassine</strong></li>
+      </ul>
     </section>
 
     <section>
@@ -167,7 +264,7 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="program.html">Programme</a></li>
             <li><a href="speakers.html">Intervenants</a></li>
-            <li><a href="registration.html">Inscription</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -179,6 +276,10 @@
           <a href="https://www.linkedin.com/company/club-powerup/" target="_blank" class="footer-icon linkedin" title="LinkedIn PowerUP"><i class="fa fa-linkedin"></i></a>
           <a href="https://www.linkedin.com/company/mechatronics-trendz-b69240203/" target="_blank" class="footer-icon linkedin" title="LinkedIn Mechatronics TrendZ"><i class="fa fa-linkedin"></i></a>
           <a href="https://nouary.github.io/Power-Up/index.html" target="_blank" class="footer-icon web" title="Site PowerUP"><i class="fa fa-globe"></i></a>
+        </div>
+        <div class="footer-contact">
+          <a href="mailto:mhamed.sayyouri@usmba.ac.ma"><i class="fa fa-envelope"></i> mhamed.sayyouri@usmba.ac.ma</a><br>
+          <span><i class="fa fa-map-marker"></i> ENSA Fès, Maroc</span>
         </div>
       </div>
     </div>
