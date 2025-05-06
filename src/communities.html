@@ -5,78 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Communautés — INNOV'TECH 2025</title>
   <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-      .organization-community-list {
+      .organization-community-list, .scientific-community-list {
         list-style: none;
         padding: 0;
         margin: 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
       }
 
-      .organization-community-list li {
+      .organization-community-list li, .scientific-community-list li {
         background: #2c5364;
         color: #fff;
         padding: 1rem;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: transform 0.2s, box-shadow 0.2s;
+        width: 100%;
+        box-sizing: border-box;
       }
 
-      .organization-community-list li:hover {
-        transform: translateY(-5px);
+      .organization-community-list li:hover, .scientific-community-list li:hover {
+        transform: translateY(-3px);
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
       }
 
       .organization-community-list li strong {
-        display: block;
+        display: inline-block;
         font-size: 1.1rem;
-        margin-bottom: 0.5rem;
+        margin-right: 1rem;
       }
 
       .organization-community-list li:nth-child(odd) {
-        background: #ff8c00; /* Orange foncé */
+        background: #ff8c00;
       }
 
       .organization-community-list li:nth-child(even) {
-        background: #ffa500; /* Orange clair */
-      }
-
-      .scientific-community-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-      }
-
-      .scientific-community-list li {
-        background: #2c5364;
-        color: #fff;
-        padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s, box-shadow 0.2s;
-      }
-
-      .scientific-community-list li:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        background: #ffa500;
       }
 
       .scientific-community-list li:nth-child(odd) {
-        background: #1b1e88; /* Orange foncé */
+        background: #1b1e88;
       }
 
       .scientific-community-list li:nth-child(even) {
-        background: #635ee4; /* Orange clair */
+        background: #635ee4;
       }
-    </style>
+
+      @media (max-width: 768px) {
+        .organization-community-list li, .scientific-community-list li {
+          padding: 0.8rem;
+          font-size: 0.95rem;
+        }
+
+        .organization-community-list li strong {
+          display: block;
+          margin-bottom: 0.3rem;
+        }
+      }
+  </style>
 </head>
 <body class="bg-navy text-white">
   <div class="background-art">
@@ -200,18 +190,18 @@
     </section>
 
     <section>
-      <h2>Comité d’organisation</h2>
+      <h2>Comité d'organisation</h2>
       <ul class="organization-community-list">
-        <li><strong>TAMDOULI Ismail</strong>Président du club Mechatronics Trendz</li>
-        <li><strong>MESSAAOUDI Fatima Zahra</strong>Présidente du club Power Up</li>
-        <li></strong>Ahmed BENCHARQUI</strong></li>
-        <li></strong>Mohamed Amine TAHIRI</strong></li>
-        <li></strong>Nawal EL GHOUATE</strong></li>
-        <li></strong>Mohamed KMICH</strong></li>
-        <li></strong>Hanaa MANSOURI</strong></li>
-        <li></strong>Ahmed EL MALOUFY</strong></li>
-        <li></strong>Karim EL-KHANCHOULI</strong></li>
-        <li></strong>Hamza TAHIRI</strong></li>
+        <li><strong>TAMDOULI Ismail</strong> Président du club Mechatronics Trendz</li>
+        <li><strong>MESSAAOUDI Fatima Zahra</strong> Présidente du club Power Up</li>
+        <li><strong>Ahmed BENCHARQUI</strong></li>
+        <li><strong>Mohamed Amine TAHIRI</strong></li>
+        <li><strong>Nawal EL GHOUATE</strong></li>
+        <li><strong>Mohamed KMICH</strong></li>
+        <li><strong>Hanaa MANSOURI</strong></li>
+        <li><strong>Ahmed EL MALOUFY</strong></li>
+        <li><strong>Karim EL-KHANCHOULI</strong></li>
+        <li><strong>Hamza TAHIRI</strong></li>
         <li><strong>ABDELAOUI Jaouad</strong></li>
         <li><strong>AIT BENALI Meryem</strong></li>
         <li><strong>BELAITER Yasmine</strong></li>
@@ -241,7 +231,6 @@
         <li><strong>NAHNAHI Khadija</strong></li>
         <li><strong>ASRI Abdeljabbar</strong></li>
         <li><strong>EL ADDAOUI Yassine</strong></li>
-        
       </ul>
     </section>
 
