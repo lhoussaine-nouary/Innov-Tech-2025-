@@ -497,19 +497,18 @@ main p, main li {
 .register-link {
   display: inline-block;
   background: #00c6ff;
-  color: #1a2633 !important;
-  font-weight: 700;
-  padding: 0.7rem 1.6rem;
-  border-radius: 18px;
-  box-shadow: 0 2px 12px #00c6ff33;
+  color: #fff !important;
+  padding: 0.7em 1.5em;
+  border-radius: 30px;
+  font-weight: 600;
   text-decoration: none;
-  margin-top: 1.1rem;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,198,255,0.13);
+  transition: background 0.2s, color 0.2s;
+  margin-top: 1.5em;
 }
 .register-link:hover {
-  background: #fff;
-  color: #00c6ff !important;
-  box-shadow: 0 4px 24px #00c6ff55;
+  background: #2c5364;
+  color: #fff !important;
 }
 
 /* Responsive amélioré */
