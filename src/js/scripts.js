@@ -7,21 +7,33 @@ console.log("Bienvenue à l'événement futuriste !");
   const overlay = document.querySelector('.mobile-sidebar-overlay');
   const openBtn = document.querySelector('.navbar-toggle');
   const closeBtn = document.querySelector('.sidebar-close');
+  const navLinks = document.querySelectorAll('.sidebar-nav a');
 
   function openSidebar() {
     sidebar.classList.add('active');
     overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
+
   function closeSidebar() {
     sidebar.classList.remove('active');
     overlay.classList.remove('active');
     document.body.style.overflow = '';
   }
+
   if (openBtn && sidebar && overlay && closeBtn) {
     openBtn.addEventListener('click', openSidebar);
     closeBtn.addEventListener('click', closeSidebar);
     overlay.addEventListener('click', closeSidebar);
+
+    // Ajouter des écouteurs d'événements pour chaque lien
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Fermer la sidebar après avoir cliqué sur un lien
+        closeSidebar();
+      });
+    });
+
     // Fermer si on clique à l'extérieur du sidebar (mobile)
     document.addEventListener('touchstart', function(e) {
       if (sidebar.classList.contains('active')) {
@@ -30,6 +42,7 @@ console.log("Bienvenue à l'événement futuriste !");
         }
       }
     });
+
     // Fermer avec la touche Echap
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') closeSidebar();
